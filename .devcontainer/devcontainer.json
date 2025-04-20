@@ -1,0 +1,27 @@
+{
+    "name": "AI-ML Dev Env",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": ".."
+    },
+    "runArgs": [
+      "--gpus", "all"
+    ],
+    "customizations": {
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash",
+      "python.pythonPath": "/usr/local/bin/python"
+    },
+    "extensions": [
+      "ms-python.python",
+      "ms-toolsai.jupyter",
+      "ms-azuretools.vscode-docker"
+    ],
+    "postCreateCommand": "pip install -r requirements.txt",
+    "mounts": [
+      "source=${localWorkspaceFolder}/data,target=/workspace/data,type=bind"
+    ],
+    "remoteUser": "vscode"
+    }
+  }
+  

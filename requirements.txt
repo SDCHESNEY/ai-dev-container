@@ -1,0 +1,32 @@
+# Core Python packages
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+
+# Jupyter & IPython
+jupyterlab
+ipykernel
+notebook
+
+# Deep learning frameworks
+torch --extra-index-url https://download.pytorch.org/whl/cu121
+torchvision --extra-index-url https://download.pytorch.org/whl/cu121
+torchaudio --extra-index-url https://download.pytorch.org/whl/cu121
+tensorflow
+
+# OpenAPI & LangChain
+openai
+langchain
+tiktoken
+
+# Hugging Face & NLP
+transformers
+datasets
+sentence-transformers
+
+# Others
+fastapi
+uvicorn
+python-dotenv
