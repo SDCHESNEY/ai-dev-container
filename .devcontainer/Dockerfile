@@ -19,3 +19,4 @@ WORKDIR /home/vscode
 # Install Python packages
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install --upgrade pip && pip install -r /tmp/requirements.txt
+RUN pip install --no-cache-dir ipython
